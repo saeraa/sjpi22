@@ -1,0 +1,52 @@
+:root {
+  font-family: 'Raleway',
+    sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: $primary;
+  background-color: $bg;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: $accent;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: $fourth;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--bg);
+    background-color: var(--primary);
+  }
+
+  a:hover {
+    color: var(--accent2);
+  }
+
+}
